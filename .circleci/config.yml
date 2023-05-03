@@ -27,10 +27,6 @@ jobs:
             cd build
             cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DENABLE_BUILD_WERROR=OFF
             ninja -j4
-            cp -r bin /tmp
-
-      - store_artifacts:
-          path: /tmp/bin
 
 workflows:
   build-workflow:
