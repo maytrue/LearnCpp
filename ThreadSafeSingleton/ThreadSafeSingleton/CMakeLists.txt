@@ -3,4 +3,5 @@ add_executable(
     main.cpp
     TestClass.cpp
 )
-target_link_directories(thread_safe_singleton -lpthread)
+
+target_link_libraries(thread_safe_singleton Threads::Threads)
