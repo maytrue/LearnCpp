@@ -1,0 +1,1 @@
+add_executable(class_not_destruct main.cc)
