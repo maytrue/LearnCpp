@@ -4,3 +4,6 @@
 [submodule "thirdparty/gflags"]
 	path = thirdparty/gflags
 	url = https://github.com/gflags/gflags.git
+[submodule "thirdparty/spdlog"]
+	path = thirdparty/spdlog
+	url = https://github.com/gabime/spdlog.git

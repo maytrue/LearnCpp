@@ -7,11 +7,12 @@ find_package(Threads REQUIRED)
 # add_subdirectory(./thirdparty/glog)
 include_directories(
     ${CMAKE_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/thirdparty/build/include
+    ${CMAKE_SOURCE_DIR}/thirdparty/spdlog/include
+    # ${CMAKE_SOURCE_DIR}/thirdparty/build/include
 )
 
 link_directories(
-    ${CMAKE_SOURCE_DIR}/thirdparty/build/lib
+    # ${CMAKE_SOURCE_DIR}/thirdparty/build/lib
 )
 
 add_subdirectory(./ThreadSafeSingleton)
