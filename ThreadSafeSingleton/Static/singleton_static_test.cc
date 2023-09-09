@@ -1,10 +1,11 @@
-#include <glog/logging.h>
-#include <glog/raw_logging.h>
+// #include <glog/logging.h>
+// #include <glog/raw_logging.h>
 
 #include <iostream>
 #include <thread>
 
-#include "util/glog_initializer.h"
+// #include "util/glog_initializer.h"
+#include "util/rtc_server_log.h"
 
 class Singleton {
  public:
@@ -13,19 +14,21 @@ class Singleton {
     return instance;
   }
 
-  void Print() { LOG(INFO) << "Print"; }
+  void Print() { LOG_INFO("Print"); }
 
  private:
   Singleton() {
-    LOG(INFO) << "Singleton start construct";
+    LOG_INFO("Singleton start construct");
     std::this_thread::sleep_for(std::chrono::seconds(2));
-    LOG(INFO) << "Singleton end construct";
+     LOG_INFO("Singleton end construct");
   }
 };
 
 int main(int argc, char* argv[]) {
-  cc::GlogInitializer::Init(argv[0]);
-  LOG(INFO) << "hello world" << std::endl;
+  // cc::GlogInitializer::Init(argv[0]);
+  rtcserver::RtcServerLog::Init();
+  LOG_INFO("helo world");
+  // LOG(INFO) << "hello world" << std::endl;
 
   std::thread t1([] { Singleton::GetInstance().Print(); });
 

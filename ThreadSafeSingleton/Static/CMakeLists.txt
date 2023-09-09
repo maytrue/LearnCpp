@@ -1,2 +1,2 @@
 add_executable(singleton_static singleton_static_test.cc)
-target_link_libraries(singleton_static -lglog -lgflags -pthread)
+target_link_libraries(singleton_static -pthread)
