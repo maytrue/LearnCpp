@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Build Classic
           command: |
+            git submodule update --init --recursive
             mkdir build
             cd build
             cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DENABLE_BUILD_WERROR=OFF
