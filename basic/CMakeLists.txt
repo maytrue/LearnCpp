@@ -1,0 +1,1 @@
+add_executable(friend_class_test friend_class_test.cc)

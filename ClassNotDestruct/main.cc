@@ -15,12 +15,12 @@ class ClassNotDestruct {
   }
 };
 
-int main(int argc, char* argv[]) { 
-    char buffer[100];
+int main(int argc, char* argv[]) {
+  char buffer[100];
 
-    ClassNotDestruct* p = new (buffer)ClassNotDestruct();
-    p->Print();
-    p->~ClassNotDestruct();
-    
-    return 0; 
+  ClassNotDestruct* p = new (buffer) ClassNotDestruct();
+  p->Print();
+  p->~ClassNotDestruct();
+
+  return 0;
 }
