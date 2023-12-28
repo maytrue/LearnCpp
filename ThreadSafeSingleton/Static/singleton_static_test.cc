@@ -1,11 +1,7 @@
-// #include <glog/logging.h>
-// #include <glog/raw_logging.h>
-
 #include <iostream>
 #include <thread>
 
-// #include "util/glog_initializer.h"
-#include "util/rtc_server_log.h"
+#include "util/spdlog_initializer.h"
 
 class Singleton {
  public:
@@ -20,15 +16,13 @@ class Singleton {
   Singleton() {
     LOG_INFO("Singleton start construct");
     std::this_thread::sleep_for(std::chrono::seconds(2));
-     LOG_INFO("Singleton end construct");
+    LOG_INFO("Singleton end construct");
   }
 };
 
 int main(int argc, char* argv[]) {
-  // cc::GlogInitializer::Init(argv[0]);
-  rtcserver::RtcServerLog::Init();
+  rtcserver::SpdlogInitializer::Init();
   LOG_INFO("helo world");
-  // LOG(INFO) << "hello world" << std::endl;
 
   std::thread t1([] { Singleton::GetInstance().Print(); });
 

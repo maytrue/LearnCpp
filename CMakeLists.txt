@@ -8,6 +8,7 @@ find_package(Threads REQUIRED)
 include_directories(
     ${CMAKE_SOURCE_DIR}
     ${CMAKE_SOURCE_DIR}/thirdparty/spdlog/include
+    ${CMAKE_SOURCE_DIR}/thirdparty/sigslot/include
     # ${CMAKE_SOURCE_DIR}/thirdparty/build/include
 )
 
@@ -20,3 +21,4 @@ add_subdirectory(./DynamicRegisterModule/DynamicRegisterModule)
 add_subdirectory(./FindSubTree)
 add_subdirectory(./ClassNotDestruct)
 add_subdirectory(./basic)
+add_subdirectory(./sigslot)
