@@ -1,6 +1,6 @@
-# CAndCppTrick
+# LearnCpp
 
-This repository contains c and cpp programming tricks.
+This repository contains basic example when I am learning c and cpp language.
 
 ## DynamicRegisterModule
 
