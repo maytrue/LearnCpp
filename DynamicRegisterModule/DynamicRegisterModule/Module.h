@@ -12,9 +12,9 @@
 #include <stdio.h>
 
 typedef struct ModuleInfo {
-    char name[1024];
-    void (*print)();
-    struct ModuleInfo *next;
+  char name[1024];
+  void (*print)();
+  struct ModuleInfo *next;
 } ModuleInfo;
 
 void my_module_register(ModuleInfo *info);
@@ -22,5 +22,7 @@ void my_module_register(ModuleInfo *info);
 ModuleInfo *my_module_next(const ModuleInfo *info);
 
 void my_module_register_all();
+
+void register_module_c();
 
 #endif /* Module_h */
