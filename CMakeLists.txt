@@ -17,7 +17,7 @@ link_directories(
 )
 
 add_subdirectory(./ThreadSafeSingleton)
-add_subdirectory(./DynamicRegisterModule/DynamicRegisterModule)
+add_subdirectory(./DynamicRegisterModule)
 add_subdirectory(./FindSubTree)
 add_subdirectory(./ClassNotDestruct)
 add_subdirectory(./basic)
