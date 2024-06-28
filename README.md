@@ -13,3 +13,7 @@ Simple code demo how to write thread safe singleton(shared instance) using cpp t
 ## Pointer to Implement
 
 ## Runloop 
+
+## rvalue reference 
+
+std::move and std::forward
