@@ -17,3 +17,6 @@ Simple code demo how to write thread safe singleton(shared instance) using cpp t
 ## rvalue reference 
 
 std::move and std::forward
+
+## tbb
+
