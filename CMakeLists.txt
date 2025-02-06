@@ -36,6 +36,13 @@ cpmaddpackage(
   "TBB_STRICT OFF"
 )
 
+CPMAddPackage(
+  NAME roaring
+  GITHUB_REPOSITORY "RoaringBitmap/CRoaring"
+  GIT_TAG v2.0.4
+  OPTIONS "BUILD_TESTING OFF"
+)
+
 add_subdirectory(./ThreadSafeSingleton)
 add_subdirectory(./DynamicRegisterModule)
 add_subdirectory(./FindSubTree)
@@ -47,3 +54,6 @@ add_subdirectory(./rvalue_reference)
 add_subdirectory(./pimpl)
 add_subdirectory(./tbb)
 add_subdirectory(./template_function)
+add_subdirectory(./roaring_test)
+add_subdirectory(./macro)
+add_subdirectory(./regex)
