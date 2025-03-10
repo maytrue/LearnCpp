@@ -10,3 +10,5 @@ add_executable(console_color console_color.cc)
 
 add_executable(shared_ptr_test shared_ptr_test.cc)
 target_link_libraries(shared_ptr_test pthread)
+
+add_executable(std_generator std_generator.cc)
