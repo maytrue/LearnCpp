@@ -67,6 +67,7 @@
         "codecvt": "cpp",
         "mutex": "cpp",
         "thread": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "cfenv": "cpp"
     }
 }
