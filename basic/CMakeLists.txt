@@ -12,3 +12,8 @@ add_executable(shared_ptr_test shared_ptr_test.cc)
 target_link_libraries(shared_ptr_test pthread)
 
 add_executable(std_generator std_generator.cc)
+
+add_executable(
+    std_clamp_test
+    std_clamp_test.cc
+)
