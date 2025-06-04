@@ -1,4 +1,9 @@
 add_executable(
-    basic 
-    basic.cc
+    signal_basic 
+    signal_basic.cc
+)
+
+add_executable(
+    signal_test
+    signal_test.cc
 )
