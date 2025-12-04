@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(CAndCppTrick)
+project(learn-cpp)
 set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -57,3 +57,5 @@ add_subdirectory(./template_function)
 add_subdirectory(./roaring_test)
 add_subdirectory(./macro)
 add_subdirectory(./regex)
+add_subdirectory(./memory_order)
+
